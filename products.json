@@ -6,7 +6,7 @@
     "type": "rollon",
     "size": "30ml",
     "price": 89,
-    "image": "images/fresh.jpg",
+    "image": "amber.jpg",
     "description": "กลิ่นสดชื่นเย็นสบาย ขนาดพกพา เหมาะกับการเดินทางและใช้ระหว่างวัน"
   },
   {
@@ -16,7 +16,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/fresh.jpg",
+    "image": "amber.jpg",
     "description": "กลิ่นสดชื่นเย็นสบาย ขนาดคุ้มค่า ใช้ได้ยาวนานสำหรับทุกวัน"
   },
   {
@@ -26,7 +26,7 @@
     "type": "rollon",
     "size": "30ml",
     "price": 89,
-    "image": "images/sweet.jpg",
+    "image": "matte.jpg",
     "description": "กลิ่นหวานนุ่มละมุน ขนาดพกพา เหมาะกับการเดินทางและใช้ระหว่างวัน"
   },
   {
@@ -36,7 +36,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/sweet.jpg",
+    "image": "matte.jpg",
     "description": "กลิ่นหวานนุ่มละมุน ขนาดคุ้มค่า ใช้ได้ยาวนานสำหรับทุกวัน"
   }
 ]
