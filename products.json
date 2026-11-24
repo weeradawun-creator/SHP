@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fresh-30",
+    "name": "ยาสระผม Fresh เล็ก 30ml",
+    "mood": "fresh",
+    "type": "rollon",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นสดชื่นเย็นสบาย ขนาดพกพา เหมาะกับการเดินทางและใช้ระหว่างวัน"
+  },
+  {
+    "id": "fresh-100",
+    "name": "ยาสระผม Fresh ใหญ่ 100ml",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นสดชื่นเย็นสบาย ขนาดคุ้มค่า ใช้ได้ยาวนานสำหรับทุกวัน"
+  },
+  {
+    "id": "sweet-30",
+    "name": "ยาสระผม Sweet เล็ก 30ml",
+    "mood": "sweet",
+    "type": "rollon",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหวานนุ่มละมุน ขนาดพกพา เหมาะกับการเดินทางและใช้ระหว่างวัน"
+  },
+  {
+    "id": "sweet-100",
+    "name": "ยาสระผม Sweet ใหญ่ 100ml",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหวานนุ่มละมุน ขนาดคุ้มค่า ใช้ได้ยาวนานสำหรับทุกวัน"
+  }
+]

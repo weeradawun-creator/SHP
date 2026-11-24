@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sapoom | ยาสระผมกลิ่นหอมละมุน</title>
+  <meta name="description" content="sapoom ยาสระผมที่เปลี่ยนทุกจังหวะการสระผมให้เป็นช่วงเวลาแห่งความหอมละมุน เลือกกลิ่นตามอารมณ์ของคุณ">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Page-specific styles for index.html */
+
+    /* Mood colors not yet defined in style.css (small touches only) */
+    [data-mood="confident"] { --mood: #2b3a55; }
+    [data-mood="romance"]   { --mood: #8c4a5a; }
+
+    /* Full-screen hero */
+    .hero--full {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 77px);
+      min-height: calc(100svh - 77px);
+      padding-block: var(--space-6);
+    }
+    .hero--full h1 {
+      max-width: 17em;
+      margin-inline: auto;
+      font-size: clamp(1.9rem, 1.1rem + 3.2vw, 3.5rem);
+      line-height: 1.5;
+    }
+    .hero--full .rule { margin-block: var(--space-4); }
+
+    /* Mood cards */
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-3);
+    }
+
+    .mood-card {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-4) var(--space-3);
+      background: var(--white);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      color: var(--ink);
+      transition: border-color var(--ease);
+    }
+    .mood-card:hover {
+      color: var(--ink);
+      border-color: var(--bronze-light);
+    }
+
+    .mood-card__name {
+      position: relative;
+      margin: 0 0 var(--space-3);
+      padding-bottom: var(--space-2);
+      font-size: var(--fs-lg);
+    }
+    .mood-card__name::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 32px;
+      height: 2px;
+      background: var(--mood);
+    }
+
+    .mood-card__text {
+      flex: 1;
+      font-size: 0.95rem;
+      line-height: 1.85;
+    }
+
+    .mood-card__cta {
+      margin-top: var(--space-2);
+      font-size: var(--fs-sm);
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+      transition: color var(--ease);
+    }
+    .mood-card:hover .mood-card__cta { color: var(--bronze); }
+
+    @media (max-width: 600px) {
+      .hero--full {
+        min-height: calc(100vh - 65px);
+        min-height: calc(100svh - 65px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">sapoom</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <h1>เปลี่ยนทุกจังหวะการสระผมให้เป็นช่วงเวลาแห่งความหอมละมุน สัมผัสความสะอาดโปร่งสบายและเสน่ห์เฉพาะตัวในแบบ sapoom</h1>
+        <hr class="rule">
+        <div class="hero__actions">
+          <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moods -->
+    <section class="section section--white" id="moods">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>เลือกกลิ่นตามอารมณ์</h2>
+          <hr class="rule">
+          <p>แต่ละกลิ่นออกแบบมาให้เข้ากับความรู้สึกของคุณในแต่ละวัน</p>
+        </div>
+
+        <div class="mood-grid">
+          <a class="mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <h3 class="mood-card__name"><span class="mood-dot"></span>สดชื่น Fresh</h3>
+            <p class="mood-card__text">ปลุกความตื่นตัวให้ทุกวันด้วยสัมผัสที่สะอาด โปร่งโล่ง และเบาสบาย เหมือนได้เริ่มต้นเช้าวันใหม่ท่ามกลางสายลมเย็น</p>
+            <span class="mood-card__cta">ดูสินค้ากลุ่มนี้</span>
+          </a>
+
+          <a class="mood-card" data-mood="sweet" href="product.html?mood=sweet">
+            <h3 class="mood-card__name"><span class="mood-dot"></span>หวานละมุน Sweet</h3>
+            <p class="mood-card__text">โอบกอดเส้นผมด้วยกลิ่นหอมหวานแผ่วเบาที่ให้ความรู้สึกอ่อนโยน น่ารัก และอบอุ่นสบายใจในทุกครั้งที่ขยับตัว</p>
+            <span class="mood-card__cta">ดูสินค้ากลุ่มนี้</span>
+          </a>
+
+          <a class="mood-card" data-mood="confident" href="product.html?mood=confident">
+            <h3 class="mood-card__name"><span class="mood-dot"></span>มั่นใจ Confident</h3>
+            <p class="mood-card__text">กลิ่นหอมสุขุมนุ่มลึกที่เสริมบุคลิกให้ก้าวเข้าสู่ทุกวันอย่างมั่นใจ และติดตัวคุณไปตลอดวัน</p>
+            <span class="mood-card__cta">ดูสินค้ากลุ่มนี้</span>
+          </a>
+
+          <a class="mood-card" data-mood="romance" href="product.html?mood=romance">
+            <h3 class="mood-card__name"><span class="mood-dot"></span>โรแมนติก Romance</h3>
+            <p class="mood-card__text">กลิ่นหอมอบอุ่นละมุนที่ทำให้ทุกช่วงเวลาใกล้ชิดน่าจดจำ ด้วยเสน่ห์แบบเบาๆ ที่ไม่ต้องพยายาม</p>
+            <span class="mood-card__cta">ดูสินค้ากลุ่มนี้</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>&copy; 2026 sapoom</span>
+      <a href="product.html">สินค้าทั้งหมด</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อ | sapoom</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Page-specific styles for order.html */
+    .order-form {
+      max-width: 560px;
+      margin-inline: auto;
+      padding: var(--space-4);
+      background: var(--white);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+    }
+
+    .field + .field { margin-top: var(--space-3); }
+
+    .field label {
+      display: block;
+      margin-bottom: var(--space-1);
+      font-size: var(--fs-sm);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+    }
+
+    .field__hint {
+      margin: var(--space-1) 0 0;
+      font-size: var(--fs-sm);
+      color: var(--beige-dark);
+    }
+
+    .order-form textarea { resize: vertical; line-height: 1.7; }
+
+    .order-form .btn { margin-top: var(--space-4); }
+    .order-form .btn:disabled { opacity: 0.5; cursor: wait; }
+
+    @media (max-width: 600px) {
+      .order-form { padding: var(--space-3); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">sapoom</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h1>สั่งซื้อสินค้า</h1>
+          <hr class="rule">
+          <p>กรอกข้อมูลด้านล่าง เราจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อและแจ้งรายละเอียดการชำระเงิน</p>
+        </div>
+
+        <form id="orderForm" class="order-form">
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="field">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="text" id="total" name="total" inputmode="numeric" required>
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" rows="3"></textarea>
+            <p class="field__hint">ไม่บังคับ เช่น ที่อยู่จัดส่ง หรือจำนวนที่ต้องการ</p>
+          </div>
+
+          <button type="submit" class="btn btn--solid btn--block">ยืนยันสั่งซื้อ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>&copy; 2026 sapoom</span>
+      <a href="product.html">กลับไปเลือกสินค้า</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

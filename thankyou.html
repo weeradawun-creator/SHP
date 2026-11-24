@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ขอบคุณที่สั่งซื้อ | sapoom</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Page-specific styles for thankyou.html */
+    .thanks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 77px);
+      min-height: calc(100svh - 77px);
+      padding-block: var(--space-6);
+      text-align: center;
+    }
+    .thanks p { margin-inline: auto; }
+
+    @media (max-width: 600px) {
+      .thanks {
+        min-height: calc(100vh - 65px);
+        min-height: calc(100svh - 65px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">sapoom</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thanks">
+    <div class="container">
+      <h1>ขอบคุณที่สั่งซื้อ</h1>
+      <hr class="rule">
+      <p class="lead">เราได้รับคำสั่งซื้อของคุณแล้ว และจะติดต่อกลับเพื่อยืนยันโดยเร็วที่สุด</p>
+      <div class="hero__actions">
+        <a class="btn" href="index.html">กลับหน้าแรก</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>&copy; 2026 sapoom</span>
+      <a href="product.html">ดูสินค้าทั้งหมด</a>
+    </div>
+  </footer>
+
+</body>
+</html>
